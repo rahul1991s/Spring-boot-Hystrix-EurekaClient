@@ -34,7 +34,7 @@ public class MovieResource {
 		return new Movie(movieId, movieSummary.getTitle(), movieSummary.getOverview());
 	}
 
-	public Movie getMovieInfog(@PathVariable("movieId") String movieId) {
+	public Movie getFallBackMovieInfo(@PathVariable("movieId") String movieId) {
 		return new Movie("NA", "No Movie", "Service is Down");
 
 	}
